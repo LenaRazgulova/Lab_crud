@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="tabl.css" />
+  <title>Таблица участников</title>
+</head>
+<body>
+<div id="tab">
+  <div class="Knopnad">
+    <h3>Список студентов</h3>
+    <input name="button" type="button" class="dob" value="Добавить"/>
+  </div>
+  <table>
+    <tr>
+      <th>ФИО</th>
+      <th>Телефон</th>
+      <th>Почта</th>
+      <th>Группа</th>
+      <th></th>
+    </tr>
+    <tr>
+      <td>Разгулова Елена Игоревна</td>
+      <td>89115176742</td>
+      <td>lena.razgulova@bk.ru</td>
+      <td>ЦПИ-11</td>
+      <td>
+        <input name="button" type="button" class="chng" value="Изменить" />
+        <input name="button" type="button" class="ud" value="Удалить" />
+      </td>
+    </tr>
+    <tr>
+      <td>Реулова Валерия Алексеевна</td>
+      <td>89456326895</td>
+      <td>lera.rergvbj@bk.ru</td>
+      <td>ЦПИ-11</td>
+      <td>
+        <input name="button" type="button" class="chng" value="Изменить" />
+        <input name="button" type="button" class="ud" value="Удалить" />
+      </td>
+    </tr>
+    <tr>
+      <td>Абакумов Илья Александрович</td>
+      <td>89456328858</td>
+      <td>ilya.rergvbj@bk.ru</td>
+      <td>ЦПИ-11</td>
+      <td>
+        <input name="button" type="button" class="chng" value="Изменить" />
+        <input name="button" type="button" class="ud" value="Удалить" />
+      </td>
+    </tr>
+    <tr>
+      <td>Пухов Илья Николаевич</td>
+      <td>89456367896</td>
+      <td>ilya.gnbbvbj@bk.ru</td>
+      <td>ЦПИ-11</td>
+      <td>
+        <input name="button" type="button" class="chng" value="Изменить" />
+        <input name="button" type="button" class="ud" value="Удалить" />
+      </td>
+    </tr>
+    <tr>
+      <td>Сальникова Екатерина Андреевна</td>
+      <td>89456324578</td>
+      <td>katya.rergvbj@bk.ru</td>
+      <td>ЦПИ-11</td>
+      <td>
+        <input name="button" type="button" class="chng" value="Изменить" />
+        <input name="button" type="button" class="ud" value="Удалить" />
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="dob"; class="popup popup-dob" style="display:none" acyion="">
+  <form>
+    <input name="button" type="button" class="zak" value="х" />
+    <h3>Информация о студенте</h3>
+    <input id="FIO"name="text" type="text" value="" placeholder="Ф.И.О" /><br />
+    <input id="nomber"name="nomber" type="nomber" value="" placeholder="Номер телефона"/><br />
+    <input id="email"name="email" type="email" value="" placeholder="E-mail" /><br />
+    <input id="group"name="group" type="text" value="" placeholder="Группа"/><br />
+    <input name="button" type="button" class='dob-btn'value="Добавить" />
+    <input name="button" type="reset" value="Очистить"/>
+  </form>
+</div>
+
+<div id="chng"; class="popup" style="display:none" acyion="">
+  <form>
+    <input name="button" type="button" class="zak" value="х" />
+    <h3>Информация о студенте</h3>
+    <input name="text" type="text" value="" placeholder="Ф.И.О" /><br />
+    <input name="nomber" type="nomber" value="" placeholder="Номер телефона"/><br />
+    <input name="email" type="email" value="" placeholder="E-mail" /><br />
+    <input name="group" type="text" value="" placeholder="Группа"/><br />
+    <input name="button" type="button" class='chng-btn'value="Изменить" />
+  </form>
+</div>
+
+<div id="ud" >
+  <input name="button" type="button" class="zak" value="х" />
+  <h3 align="center">Вы действительно хотите удалить данные?</h3>
+  <input name="button" type="button" class="udstr" value="Да" />
+  <input name="button" type="button" class="och" value="Нет" />
+</div>
+<script src="lab1.js"></script>
+</body>
+</html>
